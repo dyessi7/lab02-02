@@ -26,3 +26,14 @@ services:
     environment:
       - MESSAGE=yessi3
   
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: ${POSTGRES_PASS}
+      POSTGRES_DB: datos
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    
+volumes:
+  db_data: 

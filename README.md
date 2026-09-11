@@ -1,8 +1,6 @@
 # Laboratorio 02
 
 Hoy utilizaremos docker compose para poder desplegar 3 copias de una API. 
-Servicios web y una base de datos
-
 # Stack
 API
  -  Minimal API
